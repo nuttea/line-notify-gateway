@@ -3,5 +3,10 @@ Severity {{commonLabels.severity}}
 
 Affected nodes,
 {{#alerts}}
-  - {{labels.instance}}
+{{labels.instance}}
+
+Alert: {{labels.alertname}}
+Namespace: {{labels.namespace}}
+Message: {{annotations.message}}
+
 {{/alerts}}
