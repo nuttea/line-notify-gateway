@@ -1,4 +1,10 @@
 Alert {{groupLabels.alertname}} for nodes below has been {{status}}
+
 {{#alerts}}
-    - {{labels.instance}}
+{{labels.instance}}
+
+Alert: {{labels.alertname}}
+Namespace: {{labels.namespace}}
+Message: {{annotations.message}}
+
 {{/alerts}}
